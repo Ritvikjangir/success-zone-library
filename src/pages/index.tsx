@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <NextUIProvider>
       <div
-        className={`${geistSans.variable} ${geistMono.variable} w-full flex flex-col items-center justify-items-center font-[family-name:var(--font-geist-sans)]`}
+        className={`${geistSans.variable} ${geistMono.variable} w-full flex flex-col items-center justify-items-center font-[family-name:var(--font-geist-sans)] bg-white`}
       >
         <Header />
         <HomeComponent />
