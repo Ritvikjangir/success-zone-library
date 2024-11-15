@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Header from "../components/Header";
 import HomeComponent from "../components/Home";
 import { NextUIProvider } from "@nextui-org/react";
+import Amenities from "@/components/Amenities";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +24,7 @@ export default function Home() {
       >
         <Header />
         <HomeComponent />
-
+        <Amenities />
         {/* Footer or other components can be added similarly */}
       </div>
     </NextUIProvider>

@@ -1,5 +1,4 @@
 import React from "react";
-import { IoCall } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa6";
 import {
   Navbar,
@@ -13,10 +12,11 @@ import {
   Button,
 } from "@nextui-org/react";
 import Logo from "./Logo";
+import { FiPhone } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <Navbar isBordered maxWidth="xl" isBlurred={false}>
+    <Navbar isBordered maxWidth="xl">
       {/* Mobile Menu Toggle Button */}
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle className="text-primary" />
@@ -105,9 +105,9 @@ const Header = () => {
         {/* Contact Buttons */}
         <NavbarItem>
           <Button
-            color="danger"
+            color="primary"
             href="tel:+919166990566"
-            startContent={<IoCall />}
+            startContent={<FiPhone size={16}/>}
             radius="sm"
             as={Link}
             target="_blank"
@@ -135,14 +135,14 @@ const Header = () => {
       <NavbarContent justify="end" className="sm:hidden">
         <NavbarItem>
           <Button
-            color="danger"
+            color="primary"
             href="tel:+919166990566"
             radius="sm"
             as={Link}
             target="_blank"
             isIconOnly
           >
-            <IoCall size={24} />
+            <FiPhone size={24} />
           </Button>
         </NavbarItem>
         <NavbarItem>
