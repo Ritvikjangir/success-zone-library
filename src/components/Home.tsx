@@ -149,7 +149,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         {/* Main Content */}
-        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center h-full px-6 gap-8 max-w-7xl mx-auto">
+        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center h-full px-6 gap-8 max-w-5xl mx-auto">
           {/* Left Section */}
           <div className="text-white text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
 
           {/* Right Section */}
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full bg-opacity-80">
+          <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full bg-opacity-80">
             <h2 className="text-2xl font-semibold text-primary text-center mb-6">
               Library Visit Forms
             </h2>

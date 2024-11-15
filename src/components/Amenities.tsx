@@ -100,7 +100,7 @@ const cardList = [
 
 const Amenities = () => {
   return (
-    <div className="py-16 max-w-7xl px-6 w-full">
+    <div className="pt-16 max-w-5xl px-6 w-full" id="our-facilities">
       <div className="flex flex-col">
         <h2 className="text-2xl md:text-3xl w-full text-center text-black font-semibold">
           Amenities at Success Zone Library
@@ -109,7 +109,7 @@ const Amenities = () => {
           Top Facilities that Set Us Apart as the Best Library in Churu
         </h4>
       </div>
-      <div className="my-7 flex flex-wrap w-full gap-4 flex-1 self-auto items-center justify-center">
+      <div className="my-7 flex flex-1 flex-wrap w-full gap-4 items-center justify-between">
         {cardList.map(({ icon, heading, subHeading }, index) => (
           <AmenitiesCard
             key={index + heading}

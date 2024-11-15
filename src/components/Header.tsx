@@ -16,7 +16,7 @@ import { FiPhone } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <Navbar isBordered maxWidth="xl">
+    <Navbar maxWidth="lg" shouldHideOnScroll>
       {/* Mobile Menu Toggle Button */}
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle className="text-primary" />
@@ -64,7 +64,7 @@ const Header = () => {
             Facilities
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link
             color="foreground"
             className="text-primary font-bold"
@@ -72,7 +72,7 @@ const Header = () => {
           >
             About Us
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
           <Link
             color="foreground"
@@ -92,7 +92,7 @@ const Header = () => {
             FAQ
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link
             color="foreground"
             className="text-primary font-bold"
@@ -100,7 +100,7 @@ const Header = () => {
           >
             Contact Us
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
 
         {/* Contact Buttons */}
         <NavbarItem>
