@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, DatePicker, Input } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 
