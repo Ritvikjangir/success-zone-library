@@ -16,7 +16,7 @@ import { FiPhone } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <Navbar maxWidth="lg" shouldHideOnScroll>
+    <Navbar maxWidth="lg">
       {/* Mobile Menu Toggle Button */}
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle className="text-primary" />

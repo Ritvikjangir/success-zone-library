@@ -7,7 +7,7 @@ import {
   LuBus,
   LuClock,
   LuGlassWater,
-  LuIndianRupee,
+  // LuIndianRupee,
   LuMap,
   LuNewspaper,
   LuParkingCircle,
@@ -60,12 +60,12 @@ const cardList = [
     subHeading:
       "We provide the biggest open space among libraries, where members can have their lunch, study, work, or relax, making it a versatile and conducive environment for any task.",
   },
-  {
-    icon: LuIndianRupee,
-    heading: "Flexible Packages",
-    subHeading:
-      "We offer flexible membership packages, including monthly options starting at Rs. 1000 and discounted rates for three-month memberships with part payment facilities.",
-  },
+  // {
+  //   icon: LuIndianRupee,
+  //   heading: "Flexible Packages",
+  //   subHeading:
+  //     "We offer flexible membership packages, including monthly options starting at Rs. 1000 and discounted rates for three-month memberships with part payment facilities.",
+  // },
   {
     icon: LuArmchair,
     heading: "Comfortable Seating",

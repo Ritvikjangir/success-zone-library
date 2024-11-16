@@ -7,6 +7,7 @@ import FAQ from "@/components/FAQ";
 import { NextSeo } from "next-seo";
 import { Metadata } from "next";
 import Footer from "@/components/Footer";
+import Photos from "@/components/Photos";
 
 export const metadata: Metadata = {
   keywords: "Library, Churu, Rajasthan, Success Zone Library, Books in Churu",
@@ -57,6 +58,7 @@ export default function Home() {
         <Header />
         <HomeComponent />
         <Amenities />
+        <Photos/>
         <FAQ />
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.205246447257!2d74.9641584!3d28.2921061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39149fe027fa0647%3A0x5aca3a78436475e4!2sSUCCESS%20ZONE%20LIBRARY!5e0!3m2!1sen!2sin!4v1731698805649!5m2!1sen!2sin"

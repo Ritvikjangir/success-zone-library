@@ -20,9 +20,9 @@ const images = [
   "/library5.jpg",
   // "/library6.jpg",
   // "/library7.jpg",
-  "/library8.jpg",
-  "/library9.jpg",
-  // "/library10.jpg",
+  // "/library8.jpg",
+  // "/library9.jpg",
+  "/library10.jpg",
 ];
 
 // Define the structure of the form data
@@ -140,8 +140,11 @@ export default function Home() {
         </ModalContent>
       </Modal>
       <div
-        className="relative w-full h-screen overflow-hidden bg-cover bg-center transition-all duration-1000"
+        className="relative w-full h-fit py-10  lg:h-screen lg:py-0 overflow-hidden bg-cover bg-center"
         style={{
+          transitionTimingFunction: "linear",
+          transitionBehavior: "revert",
+          transitionDuration: "1000ms",
           backgroundImage: `url(${images[currentImage]})`,
         }}
       >
@@ -150,81 +153,82 @@ export default function Home() {
 
         {/* Main Content */}
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center h-full px-6 gap-8 max-w-5xl mx-auto">
-          {/* Left Section */}
-          <div className="text-white text-center lg:text-left">
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-              Churu&apos;s Ultimate <br /> Self-Study Spot
-            </h1>
-            <p className="text-lg md:text-xl text-gray-300">
-              Discover the perfect environment for focus and growth, where
-              productivity meets serenity.
-            </p>
+          <div className="h-fit flex flex-col lg:flex-row items-center">
+            {/* Left Section */}
+            <div className="text-white text-center lg:text-left flex flex-col mb-6">
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Churu&apos;s Ultimate <br /> Self-Study Spot
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300">
+                Discover the perfect environment for focus and growth, where
+                productivity meets serenity.
+              </p>
 
-            <p className="text-lg md:text-xl text-gray-300 pt-2">
-              We cater to students preparing for UPSC, MPPSC, IAS, LAW CAT,
-              MEDICAL NEET, IIT JEE, CA, or any other exam, we are here to help
-              you ace your goals. Our library is also a safe and secure space
-              for girls to study till late. Join us today and take the first
-              step towards academic success!
-            </p>
-          </div>
+              <p className="text-lg md:text-xl text-gray-300 pt-2">
+                We cater to students preparing for UPSC, MPPSC, IAS, LAW CAT,
+                MEDICAL NEET, IIT JEE, CA, or any other exam, we are here to
+                help you ace your goals. Our library is also a safe and secure
+                space for girls to study till late. Join us today and take the
+                first step towards academic success!
+              </p>
+            </div>
 
-          {/* Right Section */}
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full bg-opacity-80">
-            <h2 className="text-2xl font-semibold text-primary text-center mb-6">
-              Library Visit Forms
-            </h2>
-            <form
-              className="flex flex-col gap-4 w-full "
-              onSubmit={handleSubmit}
-            >
-              <Input
-                type="text"
-                color="primary"
-                classNames={{ input: "text-black" }}
-                variant="underlined"
-                label="Name"
-                isRequired
-                required
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-              <Input
-                type="number"
-                variant="underlined"
-                color="primary"
-                label="Mobile Number"
-                classNames={{ input: "text-black" }}
-                required
-                isRequired
-                name="mobileNumber"
-                max={9999999999}
-                value={formData.mobileNumber}
-                onChange={handleInputChange}
-              />
-              <Input
-                type="email"
-                variant="underlined"
-                classNames={{ input: "text-black" }}
-                color="primary"
-                label="Email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-              <DatePicker
-                label="Visit date"
-                color="primary"
-                variant="underlined"
-                classNames={{ input: "text-black" }}
-                isRequired
-                onChange={handleDateChange}
-              />
-              <Button type="submit" color="primary" isLoading={isLoading}>
-                Submit
-              </Button>
-            </form>
+            {/* Right Section */}
+            <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full bg-opacity-80">
+              <h2 className="text-2xl font-semibold text-primary text-center mb-6">
+                Library Visit Forms
+              </h2>
+              <form
+                className="flex flex-col gap-4 w-full "
+                onSubmit={handleSubmit}
+              >
+                <Input
+                  type="text"
+                  color="primary"
+                  classNames={{ input: "text-black" }}
+                  variant="underlined"
+                  label="Name"
+                  isRequired
+                  required
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                />
+                <Input
+                  type="number"
+                  variant="underlined"
+                  color="primary"
+                  label="Mobile Number"
+                  classNames={{ input: "text-black" }}
+                  required
+                  isRequired
+                  name="mobileNumber"
+                  max={9999999999}
+                  value={formData.mobileNumber}
+                  onChange={handleInputChange}
+                />
+                <Input
+                  type="email"
+                  variant="underlined"
+                  classNames={{ input: "text-black" }}
+                  color="primary"
+                  label="Email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
+                <DatePicker
+                  label="Visit date"
+                  color="primary"
+                  variant="underlined"
+                  classNames={{ input: "text-black" }}
+                  onChange={handleDateChange}
+                />
+                <Button type="submit" color="primary" isLoading={isLoading}>
+                  Submit
+                </Button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
