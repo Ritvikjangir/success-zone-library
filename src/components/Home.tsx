@@ -17,12 +17,12 @@ const images = [
   // "/library2.jpg",
   // "/library3.jpg",
   // "/library4.jpg",
-  // "/library5.jpg",
+  "/library5.jpg",
   // "/library6.jpg",
   // "/library7.jpg",
   "/library8.jpg",
   "/library9.jpg",
-  "/library10.jpg",
+  // "/library10.jpg",
 ];
 
 // Define the structure of the form data
@@ -159,7 +159,7 @@ export default function Home() {
               Discover the perfect environment for focus and growth, where
               productivity meets serenity.
             </p>
-            
+
             <p className="text-lg md:text-xl text-gray-300 pt-2">
               We cater to students preparing for UPSC, MPPSC, IAS, LAW CAT,
               MEDICAL NEET, IIT JEE, CA, or any other exam, we are here to help

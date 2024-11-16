@@ -1,16 +1,25 @@
-// src/pages/index.tsx
 import localFont from "next/font/local";
 import Header from "../components/Header";
 import HomeComponent from "../components/Home";
 import { NextUIProvider } from "@nextui-org/react";
 import Amenities from "@/components/Amenities";
 import FAQ from "@/components/FAQ";
+import { NextSeo } from "next-seo";
+import { Metadata } from "next";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  keywords: "Library, Churu, Rajasthan, Success Zone Library, Books in Churu",
+  authors: [{ name: "Arman Khan", url: "https://portfolio.arkarman.xyz/" }],
+  
+};
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -20,6 +29,28 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <NextUIProvider>
+      <NextSeo
+        title="Success Zone Library - Best Library in Churu, Rajasthan"
+        description="Discover Success Zone Library, the best local library in Churu City, Churu District, Rajasthan. Access a wide range of books and resources to enhance your knowledge."
+        canonical="https://success-zone.vercel.app/"
+        
+        openGraph={{
+          url: "https://success-zone.vercel.app/",
+          title: "Success Zone Library - Best Library in Churu, Rajasthan",
+          description:
+            "Looking for a library in Churu? Visit Success Zone Library, your go-to place for books and learning in Churu City, Churu District, Rajasthan.",
+          images: [
+            {
+              url: "https://success-zone.vercel.app/SuccessZoneLogo.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Success Zone Library in Churu, Rajasthan",
+              type: "image/jpeg",
+            },
+          ],
+          siteName: "Success Zone Library",
+        }}
+      />
       <div
         className={`${geistSans.variable} ${geistMono.variable} w-full flex flex-col items-center justify-items-center font-[family-name:var(--font-geist-sans)] bg-white scroll-smooth`}
       >
@@ -34,6 +65,7 @@ export default function Home() {
           loading="lazy"
           className="mb-10"
         ></iframe>
+        <Footer></Footer>
         {/* Footer or other components can be added similarly */}
       </div>
     </NextUIProvider>
