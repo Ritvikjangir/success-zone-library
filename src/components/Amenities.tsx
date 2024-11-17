@@ -52,7 +52,7 @@ const cardList = [
     icon: LuWebhook,
     heading: "Safety & Security",
     subHeading:
-      "At Success Zone Library in Churu, the safety of our members is our top priority. We ensure a secure environment for late-night studying, particularly for female students, with 24/7 CCTV surveillance and trained staff.",
+      "The safety of our members is our top priority. We ensure a secure environment for late-night studying, particularly for female students, with 24/7 CCTV surveillance and trained staff.",
   },
   {
     icon: LuMap,
@@ -94,7 +94,7 @@ const cardList = [
     icon: LuNewspaper,
     heading: "Daily Newspaper",
     subHeading:
-      "Success Zone Library offers daily newspapers in both Hindi and English, catering to students preparing for various exams that require knowledge of current affairs. This resource provides students with up-to-date information and helps them stay informed.",
+      "Success Zone Library offers daily newspapers in both Hindi and English, catering to students preparing for various exams that require knowledge of current affairs. It helps them stay informed.",
   },
 ];
 

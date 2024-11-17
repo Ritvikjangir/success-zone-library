@@ -43,8 +43,8 @@ export default function Home() {
           images: [
             {
               url: "https://success-zone.vercel.app/SuccessZoneLogo.jpg",
-              width: 1200,
-              height: 630,
+              width: 662,
+              height: 500,
               alt: "Success Zone Library in Churu, Rajasthan",
               type: "image/jpeg",
             },

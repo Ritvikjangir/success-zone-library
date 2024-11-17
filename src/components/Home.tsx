@@ -142,9 +142,6 @@ export default function Home() {
       <div
         className="relative w-full h-fit py-10  lg:h-screen lg:py-0 overflow-hidden bg-cover bg-center"
         style={{
-          transitionTimingFunction: "linear",
-          transitionBehavior: "revert",
-          transitionDuration: "1000ms",
           backgroundImage: `url(${images[currentImage]})`,
         }}
       >

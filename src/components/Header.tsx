@@ -15,8 +15,11 @@ import Logo from "./Logo";
 import { FiPhone } from "react-icons/fi";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
-    <Navbar maxWidth="lg">
+    <Navbar maxWidth="lg" isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}>
       {/* Mobile Menu Toggle Button */}
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle className="text-primary" />
@@ -92,6 +95,15 @@ const Header = () => {
             FAQ
           </Link>
         </NavbarItem>
+        <NavbarMenuItem>
+          <Link
+            className="text-primary font-bold"
+            href="#360-view"
+            color="primary"
+          >
+            360 View
+          </Link>
+        </NavbarMenuItem>
         {/* <NavbarItem>
           <Link
             color="foreground"
@@ -107,7 +119,7 @@ const Header = () => {
           <Button
             color="primary"
             href="tel:+919166990566"
-            startContent={<FiPhone size={16}/>}
+            startContent={<FiPhone size={16} />}
             radius="sm"
             as={Link}
             target="_blank"
@@ -162,18 +174,19 @@ const Header = () => {
       </NavbarContent>
 
       {/* Mobile Navbar Menu */}
-      <NavbarMenu className="gap-4">
+      <NavbarMenu className="gap-4 bg-transparent" >
         <NavbarMenuItem>
           <Link
             className="w-full text-xl"
-            href="#facilities"
+            href="#our-facilities"
             size="lg"
             color="primary"
+            onClick={() => setIsMenuOpen(false)}
           >
             Facilities
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem>
+        {/* <NavbarMenuItem>
           <Link
             className="w-full text-xl"
             href="#about-us"
@@ -182,7 +195,7 @@ const Header = () => {
           >
             About Us
           </Link>
-        </NavbarMenuItem>
+        </NavbarMenuItem> */}
         <NavbarMenuItem>
           <Link
             className="w-full text-xl"
@@ -200,6 +213,8 @@ const Header = () => {
             href="#faq"
             size="lg"
             color="primary"
+            onClick={() => setIsMenuOpen(false)}
+
           >
             FAQ
           </Link>
@@ -207,11 +222,12 @@ const Header = () => {
         <NavbarMenuItem>
           <Link
             className="w-full text-xl"
-            href="#contact-us"
+            href="#360-view"
             size="lg"
             color="primary"
+            onClick={() => setIsMenuOpen(false)}
           >
-            Contact Us
+            360 View
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
