@@ -6,8 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
+        <meta name="google-site-verification"
           content="Nya-RZqVryB9ZxiL0jkJDv8zVT4gs2yBnf0r6kk49pY"
         />
         <link

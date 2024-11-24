@@ -32,15 +32,15 @@ export default function Home() {
       <NextSeo
         title="Success Zone Library - Best Library in Churu, Rajasthan"
         description="Discover Success Zone Library, the best local library in Churu City, Churu District, Rajasthan. Access a wide range of books and resources to enhance your knowledge."
-        canonical="https://success-zone.vercel.app/"
+        canonical="https://success-zone-library.vercel.app/"
         openGraph={{
-          url: "https://success-zone.vercel.app/",
+          url: "https://success-zone-library.vercel.app/",
           title: "Success Zone Library - Best Library in Churu, Rajasthan",
           description:
             "Looking for a library in Churu? Visit Success Zone Library, your go-to place for books and learning in Churu City, Churu District, Rajasthan.",
           images: [
             {
-              url: "https://success-zone.vercel.app/SuccessZoneLogo.jpg",
+              url: "https://success-zone-library.vercel.app/SuccessZoneLogo.jpg",
               width: 662,
               height: 500,
               alt: "Success Zone Library in Churu, Rajasthan",
