@@ -7,12 +7,14 @@ const images = [
   "/library2.jpg",
   "/library3.jpg",
   "/library4.jpg",
+  "/library17.jpg",
   "/library6.jpg",
   "/library7.jpg",
   "/library1.jpg",
   "/library8.jpg",
   "/library12.jpg",
-  "/library11.jpg",
+  "/library13.jpg",
+  "/library14.jpg",
 ];
 
 const Photos = () => {

@@ -29,9 +29,8 @@ const AmenitiesCard: FC<AmenitiesCardProps> = ({
         </h4>
       </CardHeader>
       <CardBody
-        className={`overflow-visible py-0 transition-all duration-500 ${
-          isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-        } flex sm:opacity-100`}
+        className={`overflow-visible py-0 transition-all duration-500 ${isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+          } flex sm:opacity-100`}
       >
         <p className="text-md sm:flex text-center text-opacity-60 text-black font-medium">
           {subheading}
